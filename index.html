@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>离恨烟 Coser 写真馆 · 公孙离</title>
+  <style>
+    :root {
+      --primary: #a67bc1;
+      --accent: #e84a8f;
+      --bg: #0f0e17;
+      --text: #e0e0ff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      background-image: linear-gradient(rgba(15,14,23,0.85), rgba(15,14,23,0.85)),
+                        url('https://p3-pc-sign.douyinpic.com/tos-cn-i-0813c001/oYCz9ADykCsfrASJSP7hDJiEAnuFEApIAIgAue~noop.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(166,123,193,0.8);
+    }
+    .subtitle {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+    .intro {
+      max-width: 800px;
+      margin: 0 auto 50px;
+      font-size: 1.15rem;
+      opacity: 0.9;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      padding: 20px;
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      transition: all 0.4s ease;
+      aspect-ratio: 3 / 4;
+      background: #111;
+    }
+    .card:hover {
+      transform: scale(1.06) translateY(-10px);
+      box-shadow: 0 20px 50px rgba(166,123,193,0.4);
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .card:hover img {
+      transform: scale(1.12);
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+      padding: 20px 15px 15px;
+      color: white;
+      font-size: 1.1rem;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .card:hover .overlay {
+      opacity: 1;
+    }
+    footer {
+      text-align: center;
+      padding: 60px 20px 30px;
+      font-size: 0.95rem;
+      opacity: 0.7;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2.8rem; }
+      .gallery { gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>离恨烟 Coser 写真</h1>
+      <div class="subtitle">公孙离 · 墨染江湖 · 无双限定</div>
+      <p class="intro">
+        一笛清影化烟魂，落入江湖伞犹温。<br>
+        这里收集了离恨烟皮肤的高还原真人cosplay写真，<br>
+        玉肤白皙、水墨侠女风，愿你喜欢～
+      </p>
+    </header>
+
+    <div class="card">
+  <img src="1.jpg" alt="离恨烟 cosplay 1">
+  <div class="overlay">江湖烟魂·绝美还原</div>
+</div>
+
+     <div class="card">
+  <img src="2.jpg" alt="离恨烟 cosplay 2">
+  <div class="overlay">·阿离1</div>
+</div>
+
+      <div class="card">
+  <img src="3.jpg" alt="离恨烟 cosplay 3">
+  <div class="overlay">阿离2</div>
+</div>
+
+     <div class="card">
+  <img src="4.jpg" alt="离恨烟 cosplay 4">
+  <div class="overlay">持伞翩跹·墨染江湖</div>
+</div>
+
+      <!-- 你可以继续加图，例如从你截图或网络找的高清cos -->
+      <!-- <div class="card"><img src="你的图片链接" alt="..."><div class="overlay">...</div></div> -->
+    </div>
+
+    <footer>
+      Made with ♡ for 公孙离玩家 · 图片来源于网络，如有侵权请联系删除<br>
+      2026 © 离恨烟写真馆
+    </footer>
+  </div>
+
+</body>
+</html>
